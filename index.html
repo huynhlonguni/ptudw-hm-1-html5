@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>21120285-HTML5</title>
+	<link rel="icon" href="./html5.svg">
+	<style>
+	a {
+		text-decoration: none;
+		font-weight: bold;
+		color: blue;
+	}
+
+	.main {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.nav {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		display: flex;
+		justify-content: space-between;
+		font-size: 20px;
+	}
+
+	.nav-link {
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+
+	.content {
+		display: flex;
+	}
+
+	.left {
+		flex: 30%;
+	}
+
+	.right {
+		flex: 70%;
+	}
+
+	li {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	table {
+		border-collapse: separate;
+	}
+
+	table, th, td {
+		border: 1px solid black;
+	}
+
+	th, td {
+		padding: 10px;
+	}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="nav">
+			<div>
+				<a href="#">
+					<img src="./html5_blue.svg" style="width: 20px; height: 20px; color:blue"/>
+					<span>HTML5</span>
+				</a>
+			</div>
+			<div>
+				<a class="nav-link" href="#">Link 1</a>
+				<a class="nav-link" href="#">Link 2</a>
+				<a class="nav-link" href="#">Link 3</a>
+			</div>
+		</div>
+		<hr/>
+		<div class="content">
+			<div class="left">
+				<ol>
+					<li>
+						<div>Nested List Item 1</div>
+						<ul>
+							<li>Item 1</li>
+							<li>Item 2</li>
+						</ul>
+					</li>
+					<li>
+						<div>Nested List Item 2</div>
+						<ul>
+							<li>Item 1</li>
+							<li>Item 2</li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+			<div class="right">
+				<div>
+					<h3>My Favorite Image</h3>
+					<img src="https://images.pexels.com/photos/135940/pexels-photo-135940.jpeg" style="width: 35%;" />
+				</div>
+				<div>
+					<h3>A test table with <em>merged cells</em></h3>
+					<table>
+						<tr>
+							<th rowspan="2"></th>
+							<th colspan="2">Average</th>
+							<th rowspan="2">Red eyes</th>
+						</tr>
+						<tr>
+							<th>height</th>
+							<th>weight</th>
+						</tr>
+						<tr>
+							<th>Males</th>
+							<td>1.9</td>
+							<td>0.003</td>
+							<td>40%</td>
+						</tr>
+						<tr>
+							<th>Females</th>
+							<td>1.7</td>
+							<td>0.002</td>
+							<td>43%</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<hr/>
+		<div style="text-align: center;">Copyright © 2022</div>
+	</div>
+</body>
+</html>
